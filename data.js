@@ -30,8 +30,8 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.04943918772240785,
-          "pitch": 0.9266329317730744,
+          "yaw": 0,
+          "pitch": 0,
           "rotation": 0,
           "target": "1-reception"
         }
@@ -62,20 +62,20 @@ var APP_DATA = {
       ],
       "faceSize": 1632,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 1.5420603920680334,
+        "pitch": -0.0209308514332065,
+        "fov": 1.4010588678110822
       },
       "linkHotspots": [
         {
-          "yaw": 1.5241407687215753,
-          "pitch": 0.4750648942320961,
+          "yaw": 1.5622948790683235,
+          "pitch": 0.48869663808196506,
           "rotation": 0,
           "target": "2-reception-2"
         },
         {
-          "yaw": -1.7989407085566391,
-          "pitch": 1.004385067037866,
+          "yaw": -1.7785974340259543,
+          "pitch": 0.1455363552487352,
           "rotation": 0,
           "target": "0-dr-jp-grey"
         }
@@ -112,28 +112,28 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -1.6259915396771625,
-          "pitch": 0.5332063374849838,
-          "rotation": 0,
-          "target": "1-reception"
-        },
-        {
-          "yaw": -0.5781339494706543,
-          "pitch": 0.5310130754631626,
-          "rotation": 0,
-          "target": "3-examination-room-1"
-        },
-        {
-          "yaw": 0.004192750115024069,
-          "pitch": 0.4802564362887338,
+          "yaw": -0.011021709784019507,
+          "pitch": 0.47297304877704427,
           "rotation": 0,
           "target": "4-corridor"
         },
         {
-          "yaw": 0.6665444831721032,
-          "pitch": 0.6240545074368136,
+          "yaw": -0.6529528161742153,
+          "pitch": 0.2941114028954548,
           "rotation": 0,
-          "target": "8-dr-jp-office"
+          "target": "3-examination-room-1"
+        },
+        {
+          "yaw": 0.6895879597873105,
+          "pitch": 0.2486269011865332,
+          "rotation": 0,
+          "target": "9-dr-jp-office-2"
+        },
+        {
+          "yaw": -1.6253786940444908,
+          "pitch": 0.523621954260884,
+          "rotation": 0,
+          "target": "1-reception"
         }
       ],
       "infoHotspots": []
@@ -162,20 +162,20 @@ var APP_DATA = {
       ],
       "faceSize": 1632,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 1.1956193118092777,
+        "pitch": 0.041323595988156825,
+        "fov": 1.4010588678110822
       },
       "linkHotspots": [
         {
-          "yaw": -2.0398849220081665,
-          "pitch": 0.6024179567206005,
+          "yaw": -1.9749947820248117,
+          "pitch": 0.28306263130810905,
           "rotation": 0,
           "target": "2-reception-2"
         },
         {
-          "yaw": 1.7667302573761328,
-          "pitch": 0.4221100390511694,
+          "yaw": 1.7332582869182467,
+          "pitch": 0.2082575052409048,
           "rotation": 0,
           "target": "6-waiting-room"
         }
@@ -206,20 +206,20 @@ var APP_DATA = {
       ],
       "faceSize": 1632,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 1.5520548599059936,
+        "pitch": -0.005834667138827854,
+        "fov": 1.4010588678110822
       },
       "linkHotspots": [
         {
-          "yaw": -1.584556881993386,
-          "pitch": 0.5277623271657781,
+          "yaw": -1.5857529086245137,
+          "pitch": 0.4791523818446315,
           "rotation": 0,
           "target": "2-reception-2"
         },
         {
-          "yaw": 1.4395581108040556,
-          "pitch": 0.5075259725150438,
+          "yaw": 1.49249304164276,
+          "pitch": 0.5220984902456554,
           "rotation": 0,
           "target": "6-waiting-room"
         }
@@ -250,14 +250,14 @@ var APP_DATA = {
       ],
       "faceSize": 1632,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 0.9531286053219539,
+        "pitch": 0.2008980617368401,
+        "fov": 1.4010588678110822
       },
       "linkHotspots": [
         {
-          "yaw": 2.1968340263229242,
-          "pitch": 0.49548040331834997,
+          "yaw": 1.9754410511068663,
+          "pitch": 0.2775748584399107,
           "rotation": 0,
           "target": "6-waiting-room"
         }
@@ -288,40 +288,40 @@ var APP_DATA = {
       ],
       "faceSize": 1632,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -1.8016575765136604,
+        "pitch": 0.22776834443315153,
+        "fov": 1.4010588678110822
       },
       "linkHotspots": [
         {
-          "yaw": 0.14408864050458092,
-          "pitch": 0.4735342444370456,
-          "rotation": 0,
-          "target": "3-examination-room-1"
-        },
-        {
-          "yaw": -0.39501529174919625,
-          "pitch": 0.6631174172119696,
-          "rotation": 0,
-          "target": "4-corridor"
-        },
-        {
-          "yaw": -2.5390319915505017,
-          "pitch": 0.6336670200339878,
-          "rotation": 0,
-          "target": "5-examination-room-2"
-        },
-        {
-          "yaw": -1.7612475096185705,
-          "pitch": 0.4117076804262165,
+          "yaw": -1.7604512274174358,
+          "pitch": 0.22971715166870155,
           "rotation": 0,
           "target": "7-casting-room"
         },
         {
-          "yaw": -1.0498835464993395,
-          "pitch": 0.5517909244597519,
+          "yaw": -1.0698523625325045,
+          "pitch": 0.32609787221231556,
           "rotation": 0,
           "target": "9-dr-jp-office-2"
+        },
+        {
+          "yaw": -2.4429014208309354,
+          "pitch": 0.201234585527148,
+          "rotation": 0,
+          "target": "5-examination-room-2"
+        },
+        {
+          "yaw": 0.16185219594968636,
+          "pitch": 0.39175038402839313,
+          "rotation": 0,
+          "target": "3-examination-room-1"
+        },
+        {
+          "yaw": -0.37215072286865336,
+          "pitch": 0.6328170353968687,
+          "rotation": 0,
+          "target": "4-corridor"
         }
       ],
       "infoHotspots": []
@@ -350,14 +350,14 @@ var APP_DATA = {
       ],
       "faceSize": 1632,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -1.00487395762935,
+        "pitch": 0.04828692957795511,
+        "fov": 1.4010588678110822
       },
       "linkHotspots": [
         {
-          "yaw": -1.9127596104423894,
-          "pitch": 0.41395197240665915,
+          "yaw": -1.9532184295266362,
+          "pitch": 0.17903670266135485,
           "rotation": 0,
           "target": "6-waiting-room"
         }
@@ -394,14 +394,20 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.5677599052743734,
-          "pitch": 0.49540287444454734,
+          "yaw": -0.6471470279579332,
+          "pitch": 0.0655447262406117,
+          "rotation": 0,
+          "target": "6-waiting-room"
+        },
+        {
+          "yaw": -0.5351706998935732,
+          "pitch": 0.48895142913047174,
           "rotation": 0,
           "target": "9-dr-jp-office-2"
         },
         {
-          "yaw": -1.9942194634631818,
-          "pitch": 0.5158158276237419,
+          "yaw": -1.9778419262209912,
+          "pitch": 0.18205780398234594,
           "rotation": 0,
           "target": "2-reception-2"
         }
@@ -432,22 +438,28 @@ var APP_DATA = {
       ],
       "faceSize": 1632,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 0.6045185863725955,
+        "pitch": 0.09549700966401531,
+        "fov": 1.4010588678110822
       },
       "linkHotspots": [
         {
-          "yaw": 2.9931281487513557,
-          "pitch": 0.5712721739958795,
-          "rotation": 0,
-          "target": "6-waiting-room"
-        },
-        {
-          "yaw": 1.193739179153944,
-          "pitch": 0.610800826877421,
+          "yaw": 1.1832433724298959,
+          "pitch": 0.5928321596657824,
           "rotation": 0,
           "target": "8-dr-jp-office"
+        },
+        {
+          "yaw": 1.3048409555813585,
+          "pitch": 0.10441637507531887,
+          "rotation": 0,
+          "target": "2-reception-2"
+        },
+        {
+          "yaw": 3.1010866063873213,
+          "pitch": 0.25432186990449956,
+          "rotation": 0,
+          "target": "6-waiting-room"
         }
       ],
       "infoHotspots": []
@@ -456,7 +468,7 @@ var APP_DATA = {
   "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": true,
+    "autorotateEnabled": false,
     "fullscreenButton": false,
     "viewControlButtons": false
   }

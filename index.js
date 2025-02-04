@@ -20,6 +20,7 @@
   var bowser = window.bowser;
   var screenfull = window.screenfull;
   var data = window.APP_DATA;
+  var currentScene = '';  // Declaramos la variable al inicio
 
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
@@ -183,9 +184,19 @@
   }
 
   function switchScene(scene) {
+    currentScene = scene.data.id;
+    console.log('Switching to scene:', currentScene);  // Log para ver cuando cambiamos de escena
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
+    
+    // Recreamos los hotspots después de cambiar de escena
+    scene.scene.hotspotContainer().destroyHotspots();
+    scene.data.linkHotspots.forEach(function(hotspot) {
+        var element = createLinkHotspotElement(hotspot);
+        scene.scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+    });
+    
     startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
@@ -245,41 +256,19 @@
   }
 
   function createLinkHotspotElement(hotspot) {
-
-    // Create wrapper element to hold icon and tooltip.
     var wrapper = document.createElement('div');
-    wrapper.classList.add('hotspot');
-    wrapper.classList.add('link-hotspot');
+    wrapper.classList.add('hotspot'); // Clase general para todos los hotspots
 
-    // Create image element.
-    var icon = document.createElement('img');
-    icon.src = 'img/pin2.svg';
-    icon.classList.add('link-hotspot-icon');
+    // Asignar la clase point para reception-2 y cualquier hotspot de corridor
+    if (hotspot.target === '2-reception-2' || hotspot.target.startsWith('4-corridor')) {
+        wrapper.classList.add('point'); // Asignar clase point
+    } 
 
-    // Set rotation transform.
-    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
-    for (var i = 0; i < transformProperties.length; i++) {
-      var property = transformProperties[i];
-      icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
-    }
+  
 
-    // Add click event handler.
     wrapper.addEventListener('click', function() {
-      switchScene(findSceneById(hotspot.target));
+        switchScene(findSceneById(hotspot.target));
     });
-
-    // Prevent touch and scroll events from reaching the parent element.
-    // This prevents the view control logic from interfering with the hotspot.
-    stopTouchAndScrollEventPropagation(wrapper);
-
-    // Create tooltip element.
-    var tooltip = document.createElement('div');
-    tooltip.classList.add('hotspot-tooltip');
-    tooltip.classList.add('link-hotspot-tooltip');
-    tooltip.innerHTML = findSceneDataById(hotspot.target).name;
-
-    wrapper.appendChild(icon);
-    wrapper.appendChild(tooltip);
 
     return wrapper;
   }
@@ -299,7 +288,7 @@
     var iconWrapper = document.createElement('div');
     iconWrapper.classList.add('info-hotspot-icon-wrapper');
     var icon = document.createElement('img');
-    icon.src = 'img/info.svg';
+    icon.src = 'img/info.png';
     icon.classList.add('info-hotspot-icon');
     iconWrapper.appendChild(icon);
 
@@ -315,7 +304,7 @@
     var closeWrapper = document.createElement('div');
     closeWrapper.classList.add('info-hotspot-close-wrapper');
     var closeIcon = document.createElement('img');
-    closeIcon.src = 'img/close.svg';
+    closeIcon.src = 'img/close.png';
     closeIcon.classList.add('info-hotspot-close-icon');
     closeWrapper.appendChild(closeIcon);
 
@@ -387,6 +376,10 @@
   }
 
   // Display the initial scene.
-  switchScene(scenes[0]);
+  var firstScene = scenes[0];
+  if (firstScene) {
+    currentScene = firstScene.data.id;  // Establecemos la escena inicial
+    firstScene.scene.switchTo();
+  }
 
 })();
